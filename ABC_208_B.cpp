@@ -1,4 +1,6 @@
-//HINT 1->  Coin Change Problem (Greedy ALgorithms)
+//Task->Factorial Yen Coin.
+
+//HINT 1->  Coin Change Problem Variation (Greedy Algorithms)
 
 #include <bits/stdc++.h>
 #define int long long
@@ -7,9 +9,13 @@
 #define mxsize 100000
 using namespace std;
 
-//Hint 2-> USE concept of Coin Change Problem but instead of coins use factorials of that particular coin.
-//Beware of Overflow & Out of Range Errors .Because Factorials can be pretty large-[Check Constraints of the problem]
+//Hint 2-> Use concept of Coin Change Problem but instead of coins use factorials of that each coin.
 
+NOTE-->//Beware of Overflow & Out of Range Errors .Because Factorials can be pretty large-[Check Constraints of the problem]
+
+//Hint 3->To Avoid TLE & Overflows Precalculate Factrials of some numbers & store in an array.
+	
+//[Wiseky choose the range to which you should precalculate based on constraints of the problem.
 
 int fact(int n)
 {
@@ -46,7 +52,7 @@ void s2()
  
 	cout << ans << endl;
   
-  //Random debugging.
+  //Just debugging.
 	// cout << fa[12] << endl;
 	// for (int i = 0; i < 13; i++) {
 	// 	cout << fa[i] << " ";
